@@ -1,7 +1,5 @@
 /* VARIABLES */
 :root{
-    --primary-color: #181719;
-    --secondary-color: #FFFFFF;
     --main-font: 'Montserrat', sans-serif;
     --titles-font: 'Lora', sans-serif;
     --logo-font: 'Crimson Pro', serif;
@@ -28,8 +26,14 @@ html{
 }
 /*>>>>>>>>>>>>>>>> SITE STYLES <<<<<<<<<<<<<<<<<<<*/
 body{
+    --primary-color: #181719;
+    --secondary-color: #FFFFFF;
     position: relative;
     background-color: var(--primary-color);
+}
+body.dark{
+    --primary-color: #FFFFFF;
+    --secondary-color: #181719;
 }
 .btn-read-more{
     display: block;
@@ -46,6 +50,14 @@ body{
 }
 .content-paragraph p{
     font-size: 20px;
+}
+.dark-theme{
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+.dark-theme span{
+    font-size: 2rem;
 }
 footer{
     position: sticky;
